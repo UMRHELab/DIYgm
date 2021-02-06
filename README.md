@@ -12,6 +12,14 @@ You may install these on the Raspberry Pi using:
 `sudo apt-get install python-bluez`  
 `sudo pip3 install pybluez`  
 
+## Running on Raspberry PI  
+#### If you plan to use this only on the Raspberry Pi, Follow these steps  
+#### If you want to use this software with the mobile application, please jump to the Application header
+
+The final step after setting up bluetooth is to type:  
+`cp -R DIYgm-Raspberry-Pi-Only/* .`
+
+#### **You should be all set at this point**
 
 ## Application
 There exists an optional mobile application for use with the DIYgm software for IOS or Android that links through bluetooth.
@@ -39,13 +47,12 @@ type `sudo nano /etc/systemd/system/dbus-org.bluez.service` and hit Enter. You s
 It should now say `ExecStart=/usr/lib/bluetooth/bluetoothd --compat`. Then, press Ctrl+X, Y, and enter. This should end the editing.
 
 7. We then need to reload some parts of the Pi:  
-	a.Type `sudo systemctl daemon-reload`     and press Enter.  
-	b.Type `sudo systemctl restart bluetooth` and press Enter.  
-	c.Type `sudo chmod 755 /var/run/sdp`      and press Enter.  
+	a. Type `sudo systemctl daemon-reload`     and press Enter.  
+	b. Type `sudo systemctl restart bluetooth` and press Enter.  
+	c. Type `sudo chmod 755 /var/run/sdp`      and press Enter.  
 
-8. Get the DIYgm-RPi files from the Internet, type in:  
-`git clone https://github.com/experimex/DIYgm-RPi.git`  
-`cp -R DIYgm-RPi/* .` (including the period)
+8. To get the DIYgm-Mobile-Application files from inside the folder, type in:  
+`cp -R DIYgm-Mobile-Application-Option/* .` (including the period)
 
 9. We need to install node.js, which will let the Pi connect to the mobile apps via Bluetooth. To do this, right click on the 
 `node-v4.3.1-linux-armv6l.tar.gz` file in the home folder and click “Extract Here.” 
