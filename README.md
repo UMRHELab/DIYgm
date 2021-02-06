@@ -1,5 +1,5 @@
 # Do-It-Yourself Geiger-Muller Device
-#### The Basic Code For A DIYgm Raspberry Pi Device
+### The Basic Code For A DIYgm Raspberry Pi Device
 
 This is the public access version of the University of Michigan Radiological Health Engineering Laboratory Do-It-Yourself Geiger-Muller Device code.
 This code is built to run on a Raspberry Pi Zero W with bluetooth enabled using the UMRHE DIYgm Board and Raspian.
@@ -26,24 +26,25 @@ Raspberry Pi Softwarefor Bluetooth connection to Mobile Applications
 
 3. Open a Terminal by clicking the “>_” symbol on the top toolbar.
 
-4. First we need to install pybluez, which will let the Pi connect to the Android app via Bluetooth. Type 
+4. First we need to install pybluez, which will let the Pi connect to the Android app via Bluetooth. Type  
 `sudo apt-get install libbluetooth-dev` into the Terminal and press Enter. 
-When installation is finished, type `sudo python3 -m pip install pybluez` into the Terminal and press Enter. 
+When installation is finished, type  
+`sudo python3 -m pip install pybluez` into the Terminal and press Enter. 
 Press the Y key when prompted in order to install.
 
-5. We now need to edit the newly installed software to make it compatible with the Pi. After installation, 
+5. We now need to edit the newly installed software to make it compatible with the Pi. After installation,  
 type `sudo nano /etc/systemd/system/dbus-org.bluez.service` and hit Enter. You should now be editing a text file.
 
 6. Use the arrow keys to go to the line `ExecStart=/usr/lib/bluetooth/bluetoothd`. Go to the end of the line and add `--compat` to the end. 
 It should now say `ExecStart=/usr/lib/bluetooth/bluetoothd --compat`. Then, press Ctrl+X, Y, and enter. This should end the editing.
 
-7. We then need to reload some parts of the Pi:
+7. We then need to reload some parts of the Pi:  
 	a.Type `sudo systemctl daemon-reload`     and press Enter.  
 	b.Type `sudo systemctl restart bluetooth` and press Enter.  
 	c.Type `sudo chmod 755 /var/run/sdp`      and press Enter.  
 
-8. Get the DIYgm-RPi files from the Internet, type in:
-`git clone https://github.com/experimex/DIYgm-RPi.git`
+8. Get the DIYgm-RPi files from the Internet, type in:  
+`git clone https://github.com/experimex/DIYgm-RPi.git`  
 `cp -R DIYgm-RPi/* .` (including the period)
 
 9. We need to install node.js, which will let the Pi connect to the mobile apps via Bluetooth. To do this, right click on the 
