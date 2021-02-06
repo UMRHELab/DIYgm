@@ -73,8 +73,13 @@ This should open a text editor. Replace “TestName” with your preferred name 
 For IOS you must install the test flight application **prior** to downloading the DIYgm app. 
 You can do this by either searching for the _Test Flight_ application in the app store, or clicking the link below on your mobile device.  
 
-[TestFlight](https://apps.apple.com/us/app/testflight/id899247664)  
+[**TestFlight**](https://apps.apple.com/us/app/testflight/id899247664)  
 
 Once you have Test Flight downloaded, go to the [**DIYgm on IOS Download Page**](https://testflight.apple.com/join/hFALODXI).  
 
 #### Android:
+For android you must download and install the DIYgm APK.  
+
+Download the [**apk file**](https://drive.google.com/open?id=1AitTESAhU4iAu_M2vcSNQPzfiBf2Sed7) on your mobile device. 
+ 
+Run the apk file on your Android phone to install the app
