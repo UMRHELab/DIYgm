@@ -13,15 +13,14 @@ You may install these on the Raspberry Pi using:
 `sudo pip3 install pybluez`  
 
 ## Running on Raspberry PI  
-#### If you plan to use this only on the Raspberry Pi, Follow these steps  
-#### If you want to use this software with the mobile application, please jump to the Application header
+#### If you plan to use this only on the Raspberry Pi, do this:  
 
 The final step after setting up bluetooth is to type:  
 `cp -R DIYgm-Raspberry-Pi-Only/* .`
 
 #### **You should be all set at this point**
 
-## Application
+## Running With A Mobile Application
 There exists an optional mobile application for use with the DIYgm software for IOS or Android that links through bluetooth.
 
 
