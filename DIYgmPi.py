@@ -23,7 +23,7 @@ GPIO.setup(3, GPIO.OUT) # LED
 
 GPIO.setup(12, GPIO.OUT)
 GPIO.output(12, GPIO.HIGH)
-
+#
 
 GPIO.setup(36, GPIO.OUT)
 GPIO.output(36, GPIO.HIGH)
