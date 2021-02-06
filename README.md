@@ -69,7 +69,7 @@ You may change the name of your Raspberry Pi so you can recognize it in the mobi
 Click on the folder icon in the top toolbar to open the File Manager. Double click on the name.txt file. 
 This should open a text editor. Replace “TestName” with your preferred name for the Pi.
 
-#### IOS:
+### IOS:
 For IOS you must install the test flight application **prior** to downloading the DIYgm app. 
 You can do this by either searching for the _Test Flight_ application in the app store, or clicking the link below on your mobile device.  
 
@@ -77,7 +77,7 @@ You can do this by either searching for the _Test Flight_ application in the app
 
 Once you have Test Flight downloaded, go to the [**DIYgm on IOS Download Page**](https://testflight.apple.com/join/hFALODXI).  
 
-#### Android:
+### Android:
 For android you must download and install the DIYgm APK.  
 
 Download the [**apk file**](https://drive.google.com/open?id=1AitTESAhU4iAu_M2vcSNQPzfiBf2Sed7) on your mobile device. 
