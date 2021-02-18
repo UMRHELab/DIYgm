@@ -28,11 +28,11 @@ There exists an optional mobile application for use with the DIYgm software for 
 
 Raspberry Pi Softwarefor Bluetooth connection to Mobile Applications
 
-1. First we need to install the pybluez dev library, which will let the Pi connect to the app via Bluetooth. Type  
+1. First we need to install the pybluez dev library, which will let the Pi connect to the app via Bluetooth. Type:  
 `sudo apt-get install libbluetooth-dev` into the Terminal and press Enter. 
 
 2. We now need to edit the newly installed software to make it compatible with the Pi. After installation,  
-type `sudo nano /etc/systemd/system/dbus-org.bluez.service` and hit Enter. You should now be editing a text file.  
+type: `sudo nano /etc/systemd/system/dbus-org.bluez.service` and hit Enter. You should now be editing a text file.  
 
 3. Use the arrow keys to go to the line `ExecStart=/usr/lib/bluetooth/bluetoothd`. Go to the end of the line and add `--compat` to the end. 
 It should now say `ExecStart=/usr/lib/bluetooth/bluetoothd --compat`. Then, press Ctrl+X, Y, and enter. This should end the editing.  
@@ -47,7 +47,7 @@ It should now say `ExecStart=/usr/lib/bluetooth/bluetoothd --compat`. Then, pres
 6. To get the DIYgm-Mobile-Application files from inside the folder, type in:  
 `cp -R /home/pi/DIYgm/DIYgm-Mobile-Application-Option/* .` (including the period)  
 
-7. We need to install node.js, which will let the Pi connect to the mobile apps via Bluetooth. To do this, type
+7. We need to install node.js, which will let the Pi connect to the mobile apps via Bluetooth. To do this, type:  
 `sudo tar -xf node-v4.3.1-linux-armv6l.tar.gz` (Tip: press Tab to autocomplete the filename)  
 
 8. Type `sudo service bluetooth stop` to turn off the Pi’s Bluetooth for now.  
@@ -62,15 +62,17 @@ Type `cd node-v4.3.1-linux-armv6l` and press Enter.
 12. Type `cd /` to get back to the main directory
 
 13. You may want to change the name of your Raspberry Pi so you can recognize it in the mobile app. 
-To do this, type `sudo nano name.txt` Replace “TestName” with your preferred name for the Pi.
+To do this, type:  
+`sudo nano name.txt` Replace “TestName” with your preferred name for the Pi.
 
-14. We now need to tell the Raspberry Pi how to run the app, to do this we will type:
-	a. `sudo chmod +x startup.sh
-	b. `sudo chmod +x discoverable.sh
+14. We now need to tell the Raspberry Pi how to run the app, to do this we will type:  
+	a. `sudo chmod +x startup.sh`  
+	b. `sudo chmod +x discoverable.sh`  
 
 15. Now we are all set to run the app with the Raspberry Pi!
 
-16. After downloading the apllication to your mobile device, all that is left to do is input the command `sudo ./startup.sh`   
+16. After downloading the application to your mobile device, all that is left to do is input the command:  
+`sudo ./startup.sh`   
 
 When you are finished with the application, you can either remove power from your raspberry pi, or hit ctrl + C on your keyboard to stop the software.
 
@@ -101,7 +103,7 @@ We will add a cron job to start the DIYgm software any time the Raspberry Pi reb
 2. crontab should ask you which text editor you want to use, you want to choose "nano" which is most commonly option 2.  
 (Tip: Crontab will also draw an arrow to it telling you it's the easiest)
 
-3. you should be in a text editor now, you'll want to use your arrow keys to scroll down to the first empty line past the `#`   
+3. you should be in a text editor now, you'll want to use your arrow keys to scroll down to the first empty line past the _#_'s   
 
 4. When in the empty line type: `@reboot /startup.sh`  
 
