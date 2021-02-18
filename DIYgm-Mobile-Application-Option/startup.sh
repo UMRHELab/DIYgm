@@ -1,9 +1,9 @@
 if [ -f transfer.txt ]
 then
-	rm -f transfer.txt
-	echo transfer.txt deleted
+	sudo rm -f transfer.txt
+	sudo echo transfer.txt deleted
 fi
 
-./discoverable.sh &
+sudo ./discoverable.sh &
 sudo node main.js &
 sudo python3 diygm.py &
