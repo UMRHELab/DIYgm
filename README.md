@@ -14,6 +14,9 @@ You may install these on the Raspberry Pi using:
 `sudo apt-get install python-bluez`  
 `sudo pip3 install pybluez`  
 
+Now install the software with:  
+`git clone https://github.com/UMRHELab/DIYgm` 
+
 ## Running on Raspberry PI  
 #### If you plan to use this only on the Raspberry Pi, do this:  
 
@@ -45,7 +48,7 @@ It should now say `ExecStart=/usr/lib/bluetooth/bluetoothd --compat`. Then, pres
 5. To get to the base directory, where we will install our application files, type: `cd /`  
 
 6. To get the DIYgm-Mobile-Application files from inside the folder, type in:  
-`cp -R /home/pi/DIYgm/DIYgm-Mobile-Application-Option/* .` (including the period)  
+`sudo cp -R /home/pi/DIYgm/DIYgm-Mobile-Application-Option/* .` (including the period)  
 
 7. We need to install node.js, which will let the Pi connect to the mobile apps via Bluetooth. To do this, type:  
 `sudo tar -xf node-v4.3.1-linux-armv6l.tar.gz` (Tip: press Tab to autocomplete the filename)  
@@ -63,7 +66,7 @@ Type `cd node-v4.3.1-linux-armv6l` and press Enter.
 
 13. You may want to change the name of your Raspberry Pi so you can recognize it in the mobile app. 
 To do this, type:  
-`sudo nano name.txt` Replace “TestName” with your preferred name for the Pi.
+`sudo nano name.txt` Replace “Raspberry-Pi-DIYgm” with your preferred name for the Pi.
 
 14. We now need to tell the Raspberry Pi how to run the app, to do this we will type:  
 	a. `sudo chmod +x startup.sh`  
@@ -100,8 +103,8 @@ We will add a cron job to start the DIYgm software any time the Raspberry Pi reb
 1. to get to Crontab type:
 	`sudo crontab -e`
 
-2. crontab should ask you which text editor you want to use, you want to choose "nano" which is most commonly option 2.  
-(Tip: Crontab will also draw an arrow to it telling you it's the easiest)
+2. crontab should ask you which text editor you want to use, you want to choose "nano"   
+(Tip: Crontab will also draw an arrow to it telling you it's the easiest).
 
 3. you should be in a text editor now, you'll want to use your arrow keys to scroll down to the first empty line past the _#_'s   
 
