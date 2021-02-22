@@ -108,8 +108,10 @@ We will add a cron job to start the DIYgm software any time the Raspberry Pi reb
 
 3. you should be in a text editor now, you'll want to use your arrow keys to scroll down to the first empty line past the _#_'s   
 
-4. When in the empty line type: `@reboot /startup.sh`  
+4. When in the empty line type: `@reboot /./auto-launch.sh`  
 
 5. You can now close nano by hitting ctrl+X, Y, and enter, one after another.  
+
+6. The last thing to do is to type `sudo chmod +x auto-launch.sh`  
 
 Your Raspberry Pi is now setup to run the DIYgm software the moment it starts up!  
