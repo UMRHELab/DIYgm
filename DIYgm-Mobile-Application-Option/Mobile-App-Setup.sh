@@ -1,6 +1,9 @@
+# Make sure the system is up to date
+sudo apt-get update -y
+
 # Set up script for the mobile application V2.0 - Andrew Kent
 #install bluetooth-dev
-sudo apt-get install libbluetooth-dev
+sudo apt-get install libbluetooth-dev -y
 
 #add --compat to /etc/systemd/system/dbus-org.bluez.service
 sudo sed -i 's_ExecStart=/usr/lib/bluetooth/bluetoothd_ExecStart=/usr/lib/bluetooth/bluetoothd --compat_g' /etc/systemd/system/dbus-org.bluez.service
