@@ -26,7 +26,7 @@ sudo service bluetooth start
 #mark all executables as executable
 sudo chmod +x /startup.sh
 sudo chmod +x /discoverable.sh
-sudo chmod +x auto-launch.sh
+sudo chmod +x /auto-launch.sh
 
 #set up crontab V2.0
 sudo crontab -l | { cat; echo "@reboot /./auto-launch.sh"; } | sudo crontab -
