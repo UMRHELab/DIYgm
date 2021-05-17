@@ -21,7 +21,7 @@ Now install the software with:
 #### If you plan to use this only on the Raspberry Pi, do this:  
 
 The final step after setting up bluetooth is to type:  
-`cp -R DIYgm/DIYgm-Raspberry-Pi-Only/* .`
+`cp -R DIYgm/rpi-only/* .`
 
 #### **You should be all set at this point**
 
@@ -47,8 +47,8 @@ It should now say `ExecStart=/usr/lib/bluetooth/bluetoothd --compat`. Then, pres
  
 5. To get to the base directory, where we will install our application files, type: `cd /`  
 
-6. To get the DIYgm-Mobile-Application files from inside the folder, type in:  
-`sudo cp -R /home/pi/DIYgm/DIYgm-Mobile-Application-Option/* .` (including the period)  
+6. To get the mobile-app files from inside the folder, type in:  
+`sudo cp -R /home/pi/DIYgm/mobile-app/* .` (including the period)  
 
 7. We need to install node.js, which will let the Pi connect to the mobile apps via Bluetooth. To do this, type:  
 `sudo tar -xf node-v4.3.1-linux-armv6l.tar.gz` (Tip: press Tab to autocomplete the filename)  
