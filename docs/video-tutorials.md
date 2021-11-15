@@ -6,7 +6,6 @@ Here are some video tutorials that have been made on how to run and set up your 
 
 [![Soldering your DIYgm](https://img.youtube.com/vi/NL9csHRMstE/0.jpg)](https://www.youtube.com/watch?v=NL9csHRMstE)
 
-
 ## Making your custom DIYgm Case
 
 [![Making your custom DIYgm Case](pictures/DIYgm-Case-v2.png)](https://www.youtube.com/watch?v=7_czrs8wfBI)
