@@ -21,7 +21,7 @@ bleno.on('advertisingStart', function(error) {
     console.log("BLE server - started advertising as " + name);
     bleno.setServices([
       new BlenoPrimaryService({
-        uuid: 'e3754285-8072-458b-a45b-94a0dab36800',
+        uuid: 'e3754285-8072-458b-a45b-94a0dab36801',
         characteristics: [
           new EchoCharacteristic()
         ]
