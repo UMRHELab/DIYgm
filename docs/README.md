@@ -6,6 +6,8 @@
 This is the public access version of the University of Michigan Radiological Health Engineering Laboratory Do-It-Yourself Geiger-Muller Device code.
 This code is built to run on a Raspberry Pi Zero W with bluetooth enabled using the UMRHE DIYgm Board and Raspian.
 
+## Tutorials and Wiki
+
 Below is a description of how to set up the raspberry pi with the DIYgm software. Before that is done it may be helpful to build your DIYgm.
 There are video tutorials provided [here](video-tutorials.md) that will be helpful to look at. 
 We are working on a writtenn Wiki and will hopefully have that soon; however, the video tutorials will always be our first recommendation.
