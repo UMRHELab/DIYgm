@@ -16,5 +16,5 @@ Here are some video tutorials that have been made on how to run and set up your 
 
 ## Some Extra Pictures
 
-[![DIYgm Board View](pictures/Board_BRD_v5.7.png)]
-[![DIYgm Schematic View](pictures/Board_SCH_v5.7.png)]
+![DIYgm Board View](pictures/Board_BRD_v5.7.png)
+![DIYgm Schematic View](pictures/Board_SCH_v5.7.png)
