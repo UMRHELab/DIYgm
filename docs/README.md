@@ -9,7 +9,7 @@ This code is built to run on a Raspberry Pi Zero W with bluetooth enabled using 
 ## [Tutorials](video-tutorials.md) and [Wiki](https://github.com/UMRHELab/DIYgm/wiki)
 
 Below is a description of how to set up the raspberry pi with the DIYgm software. Before that is done it may be helpful to build your DIYgm.
-There are video tutorials provided [here](video-tutorials.md) that will be helpful to look at. 
+There are [video tutorials](video-tutorials.md) that will be helpful to look at. 
 We are working on a writtenn [Wiki](https://github.com/UMRHELab/DIYgm/wiki) and will hopefully have that soon; however, the video tutorials will always be our first recommendation.
 
 
